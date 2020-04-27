@@ -16,5 +16,6 @@ import blog.views
 
 urlpatterns = [
                   path('', blog.views.blog_page),
+                  path('<int:blog_id>/', blog.views.blog_text),
 
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

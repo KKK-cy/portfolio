@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog详细信息页面</title>
+    <style type="text/css">
+        pre{
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <h1>这是blog的详细信息</h1>
+<div style="text-align: center;">
+
+<h3>{{ blog.title }}</h3>
+<h3>{{ blog.date }}</h3>
+    <img src="{{ blog.img.url }}" alt="" height="500px">
+</div>
+<pre style="width: 350px;font-size: 150%;margin: 20px auto">{{ blog.text }}</pre>
+</body>
+</html>
