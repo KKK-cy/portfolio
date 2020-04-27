@@ -8,6 +8,7 @@
     <h1>这是主页</h1>
     {% for ga in gallery %}
         {{ ga.description }}
+        <img src="{{ ga.img.url }}" alt="">
         <br>
     {% endfor %}
 
