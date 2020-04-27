@@ -10,3 +10,7 @@ class Blog(models.Model):
 
     def __str__(self):
         return self.title
+
+    # 设置文章正文只显示前50个字
+    def short_text(self):
+        return self.text[:50]+'...'
