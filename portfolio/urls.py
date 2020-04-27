@@ -15,14 +15,16 @@ Including another URLconf
 """
 from django.conf.urls.static import static
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from . import views
 from django.conf import settings
+import blog.views
 
 urlpatterns = [
                   path('admin/', admin.site.urls),
                   # 主页
                   path('', views.home),
                   # 媒体media规则
+                  path('blog/', include('blog.urls')),
 
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

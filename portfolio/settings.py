@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     # 添加自己创建的app
     'gallery.apps.GalleryConfig',
+    'blog.apps.BlogConfig'
 ]
 
 MIDDLEWARE = [
